@@ -12,19 +12,13 @@ public class LargestOf3Numbers {
 		int b = sc.nextInt();
 		int c = sc.nextInt();
 
-		if (a > b) {
-			if (a > c) {
-				System.out.println(a + " is the biggest number");
-			} else {
-				System.out.println(c + " is the biggest number");
-			}
-		}else if (b>c) {
-			System.out.println(b + " is the biggest number");
-		}else {
-			System.out.println(c + " is the biggest number");
+		if (a >= b && a >= c) {
+			System.out.println(a + " : A is the largest number");
+		} else if (b >= a && b >= c) {
+			System.out.println(b + " : B is the largest number");
+		} else {
+			System.out.println(c + " : C is the largest number");
 		}
 
-	
-	
 	}
 }
